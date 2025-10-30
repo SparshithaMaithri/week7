@@ -1,14 +1,7 @@
 pipeline {
     agent any
    
-    stages {
-
-        stage('Build Docker Image') {
-            steps {
-                echo "Build Docker Image"
-                bat "docker build -t seleniumdemoapp:v1 ."
-            }
-        }
+       stages{
         stage('Docker Login') {
             steps {
                   bat 'docker login -u sparshitha -p 0213@Csptha'
@@ -40,6 +33,7 @@ pipeline {
         }
     }
 }
+
 
 
 
