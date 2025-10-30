@@ -6,7 +6,7 @@ pipeline {
         stage('Run Selenium Tests with pytest') {
             steps {
                     echo "Running Selenium Tests using pytest"                    
-                    bat 'pip install -r requirements.txt'
+                   
                     
             }
         }
@@ -48,3 +48,4 @@ pipeline {
         }
     }
 }
+
