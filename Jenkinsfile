@@ -3,14 +3,6 @@ pipeline {
    
     stages {
 
-        stage('Run Selenium Tests with pytest') {
-            steps {
-                                    
-                   
-                    
-            }
-        }
-
         stage('Build Docker Image') {
             steps {
                 echo "Build Docker Image"
@@ -48,5 +40,6 @@ pipeline {
         }
     }
 }
+
 
 
