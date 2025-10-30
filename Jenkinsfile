@@ -5,7 +5,7 @@ pipeline {
 
         stage('Run Selenium Tests with pytest') {
             steps {
-                    echo "Running Selenium Tests using pytest"                    
+                                    
                    
                     
             }
@@ -48,4 +48,5 @@ pipeline {
         }
     }
 }
+
 
